@@ -1,1 +1,46 @@
 // Navigation Styles here
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+    border-bottom: 2px dashed @navigation-border;
+
+
+
+    h1 {
+        width: 20%;
+
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    .nav-bar {
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;
+            color: black;
+        }
+
+        @media @mobile {
+            width: 100%
+        }
+    }
+
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
